@@ -9,9 +9,9 @@ const app = express();
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect(process.env.mongodb+srv:ranjith:fillthepaperno10@horous9597.e4bgy.mongodb.net/?retryWrites=true&w=majority&appName=horous9597, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
-    .catch(err => console.log(err));
+    .catch(err => console.error('MongoDB connection error:', err));
 
 // Import and use authentication routes
 const authRoutes = require('./routes/auth');
