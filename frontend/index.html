@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoccerStars Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for animation */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-blue-50">
+    <header class="bg-blue-800 text-white">
+        <nav class="container mx-auto p-4">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="matches.html" class="hover:underline transition duration-300">Upcoming Matches</a></li>
+                <li><a href="personal-coach.html" class="hover:underline transition duration-300">Personal Coaching</a></li>
+                <li><a href="food-routine.html" class="hover:underline transition duration-300">Food Routine</a></li>
+                <li><a href="injury-prevention.html" class="hover:underline transition duration-300">Injury-Prevention</a></li>
+                <li><a href="login.html" class="hover:underline transition duration-300">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="relative">
+        <div class="container mx-auto">
+            <div class="relative">
+                <img src="8k.jpg" alt="A vibrant soccer field representing Soccerstars Academy" class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center text-white p-4 transition duration-300 ease-in-out hover:bg-opacity-70">
+                    <h1 class="text-4xl md:text-5xl font-bold animate__animated animate__fadeIn">Soccerstars Academy</h1>
+                    <p class="mt-2 text-lg md:text-xl">Where young players become champions!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <section class="bg-white rounded-lg shadow-lg p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-105 transform">
+            <h2 class="text-xl font-semibold text-blue-800">Our Vision</h2>
+            <p>We're dedicated to helping young players develop their skills, build their confidence, and achieve their goals.</p>
+            <img src="fbg4.jpg" alt="Kids Playing Soccer" class="w-full h-40 object-cover rounded-lg mt-2">
+        </section>
+        <section class="bg-white rounded-lg shadow-lg p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-105 transform">
+            <h2 class="text-xl font-semibold text-blue-800">Our Mission</h2>
+            <p>We strive to create a supportive environment where every player can thrive and succeed.</p>
+            <img src="fbg4.jpg" alt="Kids Playing Soccer" class="w-full h-40 object-cover rounded-lg mt-2">
+        </section>
+        <section class="bg-white rounded-lg shadow-lg p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-105 transform">
+            <h2 class="text-xl font-semibold text-blue-800">Our Values</h2>
+            <p>Teamwork, respect, and excellence are the core values that guide us in training young athletes.</p>
+            <img src="fbg4.jpg" alt="Kids Playing Soccer" class="w-full h-40 object-cover rounded-lg mt-2">
+        </section>
+    </main>
+
+    <footer class="bg-blue-800 text-white text-center p-4">
+        <p>Get in touch with us</p>
+        <nav>
+            <ul class="space-y-2">
+                <li><a href="mailto:info@soccerstarsacademy.com" class="hover:underline transition duration-300">info@soccerstarsacademy.com</a></li>
+                <li><a href="tel:+1234567890" class="hover:underline transition duration-300">95979984987,8012130455</a></li>
+                <li><a href="https://www.instagram.com/soccerstarsacademy/" class="hover:underline transition duration-300">@soccerstarsacademy</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
