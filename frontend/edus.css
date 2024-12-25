@@ -1,0 +1,139 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* light gray background */
+  background-image: url('football-field-pattern.jpg'); /* football field pattern background */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: #333; /* dark gray background */
+  padding: 20px;
+  text-align: center;
+  color: #fff; /* white text */
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.select-standard {
+  background-color: #fff; /* white background */
+  padding: 20px;
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.select-standard h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.select-standard select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 10px;
+}
+
+.subject-selection {
+  background-color: #fff; /* white background */
+  padding: 20px;
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.subject-selection a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* light gray border */
+  text-decoration: none;
+  color: #337ab7; /* blue text */
+}
+
+.subject-selection a:hover {
+  background-color: #f5f5f5; /* light gray background */
+}
+
+.notes-and-videos {
+  background-color: #fff; /* white background */
+  padding: 20px;
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.notes-and-videos ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notes-and-videos li {
+  margin-bottom: 10px;
+}
+
+.notes-and-videos video {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 10px;
+}
+
+/* Football-themed styles */
+
+.select-standard {
+  background-image: url('football-ball-pattern.jpg'); /* football ball pattern background */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.subject-selection a {
+  background-image: url('football-field-pattern.jpg'); /* football field pattern background */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.subject-selection a:before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('football-icon.png'); /* football icon */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.notes-and-videos ul {
+  background-image: url('football-stadium-pattern.jpg'); /* football stadium pattern background */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.notes-and-videos li {
+  background-color: #fff; /* white background */
+  padding: 10px;
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.notes-and-videos video {
+  border-color: #337ab7; /* blue border */
+}
