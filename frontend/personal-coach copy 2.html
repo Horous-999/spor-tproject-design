@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Coaches - SoccerStars Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .coach {
+            position: relative;
+            overflow: hidden;
+        }
+        .coach-image {
+            transition: transform 0.3s ease;
+        }
+        .coach-text {
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(20px);
+        }
+        .coach:hover .coach-text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .coach.active .coach-image {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-blue-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white">
+        <nav class="container mx-auto p-6">
+            <div class="flex justify-center space-x-12">
+                <a href="index.html" class="text-lg font-bold hover:text-blue-200 transition duration-300">Home</a>
+                <a href="matches.html" class="text-lg font-bold hover:text-blue-200 transition duration-300">Upcoming Matches</a>
+                <a href="personal-coach.html" class="text-lg font-bold hover:text-blue-200 transition duration-300">Personal Coaching</a>
+                <a href="food-routine.html" class="text-lg font-bold hover:text-blue-200 transition duration-300">Food and Routine</a>
+                <a href="injury-prevention.html" class="text-lg font-bold hover:text-blue-200 transition duration-300">Injury Prevention</a>
+                <a href="login.html" class="text-lg font-bold hover:text-blue-200 transition duration-300">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Personal Coaches Section -->
+    <section class="container mx-auto my-8 p-6 bg-white rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold text-center text-blue-600 mb-6">Personal Coaches</h1>
+        
+        <div class="coach-block space-y-8">
+            <div class="coach flex items-center p-4 border border-blue-200 rounded-lg hover:shadow-xl transition-shadow duration-300" onclick="toggleActive(this)">
+                <div class="coach-text pr-4 transition-opacity duration-300">
+                    <h3 class="text-xl font-semibold text-blue-500">John Smith</h3>
+                    <p class="text-gray-600"><a href="mailto:john.smith@soccerstarsacademy.com" class="hover:text-blue-500">john.smith@soccerstarsacademy.com</a></p>
+                    <p class="text-gray-600"><a href="#" onclick="makeCall('+1234567890')" class="hover:text-blue-500">+1234567890</a></p>
+                </div>
+                <img src="ronal.jpg" alt="Coach 1" class="coach-image w-48 h-48 object-cover rounded-lg ml-auto">
+            </div>
+
+            <div class="coach flex items-center p-4 border border-blue-200 rounded-lg hover:shadow-xl transition-shadow duration-300" onclick="toggleActive(this)">
+                <div class="coach-text pr-4 transition-opacity duration-300">
+                    <h3 class="text-xl font-semibold text-blue-500">Jane Doe</h3>
+                    <p class="text-gray-600"><a href="mailto:jane.doe@soccerstarsacademy.com" class="hover:text-blue-500">jane.doe@soccerstarsacademy.com</a></p>
+                    <p class="text-gray-600"><a href="#" onclick="makeCall('+9876543210')" class="hover:text-blue-500">+9876543210</a></p>
+                </div>
+                <img src="ronal.jpg" alt="Coach 2" class="coach-image w-48 h-48 object-cover rounded-lg ml-auto">
+            </div>
+
+            <div class="coach flex items-center p-4 border border-blue-200 rounded-lg hover:shadow-xl transition-shadow duration-300" onclick="toggleActive(this)">
+                <div class="coach-text pr-4 transition-opacity duration-300">
+                    <h3 class="text-xl font-semibold text-blue-500">Michael Brown</h3>
+                    <p class="text-gray-600"><a href="mailto:michael.brown@soccerstarsacademy.com" class="hover:text-blue-500">michael.brown@soccerstarsacademy.com</a></p>
+                    <p class="text-gray-600"><a href="#" onclick="makeCall('+5551234567')" class="hover:text-blue-500">+5551234567</a></p>
+                </div>
+                <img src="ronal.jpg" alt="Coach 3" class="coach-image w-48 h-48 object-cover rounded-lg ml-auto">
+            </div>
+
+            <div class="coach flex items-center p-4 border border-blue-200 rounded-lg hover:shadow-xl transition-shadow duration-300" onclick="toggleActive(this)">
+                <div class="coach-text pr-4 transition-opacity duration-300">
+                    <h3 class="text-xl font-semibold text-blue-500">Emily Johnson</h3>
+                    <p class="text-gray-600"><a href="mailto:emily.johnson@soccerstarsacademy.com" class="hover:text-blue-500">emily.johnson@soccerstarsacademy.com</a></p>
+                    <p class="text-gray-600"><a href="#" onclick="makeCall('+4449876543')" class="hover:text-blue-500">+4449876543</a></p>
+                </div>
+                <img src="ronal.jpg" alt="Coach 4" class="coach-image w-48 h-48 object-cover rounded-lg ml-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white mt-8 p-6">
+        <div class="container mx-auto text-center">
+            <p>Connect with us:</p>
+            <ul class="flex justify-center space-x-6">
+                <li><a href="mailto:info@soccerstarsacademy.com" class="hover:text-blue-200">info@soccerstarsacademy.com</a></li>
+                <li><a href="tel:+1234567890" class="hover:text-blue-200">+1234567890</a></li>
+                <li><a href="https://www.instagram.com/soccerstarsacademy/" class="hover:text-blue-200">@soccerstarsacademy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function makeCall(number) {
+            window.location.href = `tel:${number}`;
+        }
+
+        function toggleActive(element) {
+            const coaches = document.querySelectorAll('.coach');
+            coaches.forEach(coach => coach.classList.remove('active'));
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
